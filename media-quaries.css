@@ -1,0 +1,123 @@
+/* styling of tablet version 1st breakpoint */
+@media screen  and (max-width: 991px) {
+    .nav-toggle{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .nav-links{
+        /* display: none; */
+        position: absolute;
+        background-color: white;
+        left: -100%;
+        top: 100% ;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-out;
+    }
+    .nav-links.active{
+        left: 0;
+    }
+
+    .nav-links ul{
+        flex-direction: column;
+    }
+
+    .main-nav{
+        overflow: initial;
+    }
+}
+
+/* styling fot large mobile version - 2nd breakpoint  */
+@media screen and (max-width:767px){
+    .header-section{
+        flex-direction: column-reverse;
+    }
+    .header-left{
+        max-width: 100%;
+        /* display: block; */
+    }
+    .header-left p{
+        margin-top: 10px;
+    }
+    .get-started-btn{
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;  
+    }
+
+    .companies-section{
+        margin-top: -30px;
+    }
+
+    .features-card{
+        /* gap: 50%; */
+        min-width:45%;
+        /* gap: 20px; */
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+
+    .cta-section{
+        margin-top: 20px;
+    }
+    .cta-container{
+        margin-top: -80px;
+        margin-bottom: -20px;
+    }
+
+   .footer-container{
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-block: -50px;
+   }
+
+   .link-column{
+    align-items: stretch;
+   }
+}
+
+
+/* styling for medium mobile version - 3d breakpoint */
+@media screen and (max-width:479px) {
+    :root{
+        --padding-inline-section:10px;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .features-card{
+        min-width: 100%;
+        gap: 10px;
+    }
+    .features-area{
+        margin-top: 50px;
+        gap: 60px;
+    }
+    .cta-container p{
+        text-align: center;
+        margin-top: -10px;
+    }
+    .cta-container a{
+        width: 100%;
+        text-align: center;
+    }
+}
+
